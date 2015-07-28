@@ -1,0 +1,24 @@
+{
+  "name": "ldapjs-crowd-server",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "coffee index.coffee config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pghalliday/ldapjs-crowd-server.git"
+  },
+  "author": "Peter Halliday",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pghalliday/ldapjs-crowd-server/issues"
+  },
+  "homepage": "https://github.com/pghalliday/ldapjs-crowd-server",
+  "dependencies": {
+    "coffee-script": "^1.9.3",
+    "ldapjs": "^0.7.1",
+    "ldapjs-crowd": "git+https://github.com/pghalliday/ldapjs-crowd.git",
+    "q": "^1.4.1"
+  }
+}

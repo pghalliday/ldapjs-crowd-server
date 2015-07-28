@@ -1,0 +1,14 @@
+{
+  "crowd": {
+    "url": "https://crowd.my.domain/crowd",
+    "applicationName": "my_application",
+    "applicationPassword": "my_password"
+  },
+  "ldap": {
+    "dnSuffix": "o=example",
+    "bindDn": "cn=root",
+    "bindPassword": "password",
+    "searchBase": "ou=crowd",
+    "port": 389
+  }
+}
