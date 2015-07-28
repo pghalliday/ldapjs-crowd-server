@@ -5,6 +5,7 @@
     "applicationPassword": "my_password"
   },
   "ldap": {
+    "uid": "username",
     "dnSuffix": "o=example",
     "bindDn": "cn=root",
     "bindPassword": "password",
