@@ -14,6 +14,7 @@ backend = ldapjsCrowd.createBackend
     applicationName: config.crowd.applicationName
     applicationPassword: config.crowd.applicationPassword
   ldap:
+    uid: config.ldap.uid
     dnSuffix: config.ldap.dnSuffix
     bindDn: config.ldap.bindDn
     bindPassword: config.ldap.bindPassword
