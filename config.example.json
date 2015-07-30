@@ -5,11 +5,11 @@
     "applicationPassword": "my_password"
   },
   "ldap": {
-    "uid": "username",
+    "uid": "uid",
     "dnSuffix": "o=example",
     "bindDn": "cn=root",
     "bindPassword": "password",
     "searchBase": "ou=crowd",
-    "port": 389
+    "port": 4000
   }
 }

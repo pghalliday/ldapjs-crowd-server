@@ -19,12 +19,7 @@ backend = ldapjsCrowd.createBackend
     bindDn: config.ldap.bindDn
     bindPassword: config.ldap.bindPassword
     searchBase: config.ldap.searchBase
-server.add config.ldap.dnSuffix, backend.add
-server.modify config.ldap.dnSuffix, backend.modify
-server.modifyDN config.ldap.dnSuffix, backend.modifyDN
 server.bind config.ldap.dnSuffix, backend.bind
-server.compare config.ldap.dnSuffix, backend.compare
-server.del config.ldap.dnSuffix, backend.del
 server.search config.ldap.dnSuffix, backend.search
 
 Q()
