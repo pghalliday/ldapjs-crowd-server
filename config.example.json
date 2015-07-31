@@ -1,4 +1,7 @@
 {
+  "ssl": {
+    "certificateBundle": "/etc/ssl/certs/ca-certificates.crt"
+  },
   "crowd": {
     "url": "https://crowd.my.domain/crowd/",
     "applicationName": "my_application",

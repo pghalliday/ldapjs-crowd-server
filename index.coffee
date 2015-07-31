@@ -7,8 +7,19 @@ configFile = process.argv[2]
 configJson = fs.readFileSync configFile
 config = JSON.parse configJson
 
+SSL_END_CERTIFICATE = '-----END CERTIFICATE-----\n'
+SSL_END_CERTIFICATE_LENGTH = SSL_END_CERTIFICATE.length
+
+opts = require('https').globalAgent.options
+if config.ssl.certificateBundle
+  opts.ca = opts.ca || []
+  certs = fs.readFileSync config.ssl.certificateBundle
+  while certs.length
+    end = certs.indexOf SSL_END_CERTIFICATE
+    offset = end + SSL_END_CERTIFICATE_LENGTH
+    opts.ca.push certs.substring 0, offset
+    certs = certs.substring offset
 if config.crowd.sslRootCertificate
-  opts = require('https').globalAgent.options
   opts.ca = opts.ca || []
   opts.ca.push fs.readFileSync config.crowd.sslRootCertificate
 
