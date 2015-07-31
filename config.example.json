@@ -1,6 +1,6 @@
 {
   "crowd": {
-    "url": "https://crowd.my.domain/crowd",
+    "url": "https://crowd.my.domain/crowd/",
     "applicationName": "my_application",
     "applicationPassword": "my_password"
   },
