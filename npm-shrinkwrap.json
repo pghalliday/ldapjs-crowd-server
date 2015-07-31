@@ -4,12 +4,12 @@
   "dependencies": {
     "coffee-script": {
       "version": "1.9.3",
-      "from": "coffee-script@",
+      "from": "coffee-script@>=1.9.3 <2.0.0",
       "resolved": "https://registry.npmjs.org/coffee-script/-/coffee-script-1.9.3.tgz"
     },
     "ldapjs": {
       "version": "0.7.1",
-      "from": "ldapjs@",
+      "from": "ldapjs@>=0.7.1 <0.8.0",
       "resolved": "https://registry.npmjs.org/ldapjs/-/ldapjs-0.7.1.tgz",
       "dependencies": {
         "asn1": {
@@ -41,7 +41,7 @@
           "dependencies": {
             "abbrev": {
               "version": "1.0.7",
-              "from": "abbrev@1",
+              "from": "abbrev@>=1.0.0 <2.0.0",
               "resolved": "https://registry.npmjs.org/abbrev/-/abbrev-1.0.7.tgz"
             }
           }
@@ -109,7 +109,7 @@
     "ldapjs-crowd": {
       "version": "1.0.0",
       "from": "git+https://github.com/pghalliday/ldapjs-crowd.git",
-      "resolved": "git+https://github.com/pghalliday/ldapjs-crowd.git#1a4f03c5106935c540eff185ee88dea450c658fa",
+      "resolved": "git+https://github.com/pghalliday/ldapjs-crowd.git#c1509d4ef71f73ed820e0741bb081bdd44a977b4",
       "dependencies": {
         "atlassian-crowd-client": {
           "version": "1.1.1",
@@ -127,7 +127,7 @@
     },
     "q": {
       "version": "1.4.1",
-      "from": "q@",
+      "from": "q@>=1.4.1 <2.0.0",
       "resolved": "https://registry.npmjs.org/q/-/q-1.4.1.tgz"
     }
   }
