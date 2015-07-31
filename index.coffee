@@ -13,7 +13,7 @@ SSL_END_CERTIFICATE_LENGTH = SSL_END_CERTIFICATE.length
 opts = require('https').globalAgent.options
 if config.ssl.certificateBundle
   opts.ca = opts.ca || []
-  certs = fs.readFileSync config.ssl.certificateBundle
+  certs = fs.readFileSync(config.ssl.certificateBundle).toString()
   while certs.length
     end = certs.indexOf SSL_END_CERTIFICATE
     offset = end + SSL_END_CERTIFICATE_LENGTH
@@ -21,7 +21,7 @@ if config.ssl.certificateBundle
     certs = certs.substring offset
 if config.crowd.sslRootCertificate
   opts.ca = opts.ca || []
-  opts.ca.push fs.readFileSync config.crowd.sslRootCertificate
+  opts.ca.push fs.readFileSync(config.crowd.sslRootCertificate).toString()
 
 server = ldapjs.createServer()
 backend = ldapjsCrowd.createBackend
