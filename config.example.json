@@ -2,7 +2,8 @@
   "crowd": {
     "url": "https://crowd.my.domain/crowd/",
     "applicationName": "my_application",
-    "applicationPassword": "my_password"
+    "applicationPassword": "my_password",
+    "sslRootCertificate": "/optional/path/to/a/custom/root/certificate/that/node/does/not/know"
   },
   "ldap": {
     "uid": "uid",
