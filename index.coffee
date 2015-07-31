@@ -7,10 +7,10 @@ configFile = process.argv[2]
 configJson = fs.readFileSync configFile
 config = JSON.parse configJson
 
-if config.sslRootCertificate
+if config.crowd.sslRootCertificate
   opts = require('https').globalAgent.options
   opts.ca = opts.ca || []
-  opts.ca.push fs.readFileSync config.sslRootCertificate
+  opts.ca.push fs.readFileSync config.crowd.sslRootCertificate
 
 server = ldapjs.createServer()
 backend = ldapjsCrowd.createBackend
