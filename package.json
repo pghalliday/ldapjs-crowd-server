@@ -16,9 +16,9 @@
   },
   "homepage": "https://github.com/pghalliday/ldapjs-crowd-server",
   "dependencies": {
-    "coffee-script": "^1.9.3",
-    "ldapjs": "^0.7.1",
-    "ldapjs-crowd": "git+https://github.com/pghalliday/ldapjs-crowd.git",
+    "coffee-script": "^1.10.0",
+    "ldapjs": "^1.0.0",
+    "ldapjs-crowd": "^1.0.0",
     "q": "^1.4.1"
   }
 }
